@@ -1,0 +1,7 @@
+#put data into confusion matrix function
+disp = metrics.ConfusionMatrixDisplay.from_predictions(y_test, predicted)
+#subtitle the matrix
+disp.figure_.suptitle("Confusion Matrix")
+#display the plot
+print(f"Confusion matrix:\n{disp.confusion_matrix}")
+plt.show()
